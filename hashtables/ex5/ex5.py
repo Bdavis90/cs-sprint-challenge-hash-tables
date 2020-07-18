@@ -6,8 +6,22 @@ def finder(files, queries):
     """
     YOUR CODE HERE
     """
-    # Your code here
+    hash_table = {}
+    result = []
 
+    for path in files:
+        file_item = path.split('/')[-1]
+
+        if file_item not in hash_table:
+            hash_table[file_item] = [path]
+        else:
+            hash_table[file_item].append(path)
+
+    for query in queries:
+        if query in hash_table:
+            results = hash_table[query]
+            for path in results:
+                result.append(path)
     return result
 
 
