@@ -23,11 +23,17 @@ Commit your code regularly and meaningfully. This practice helps both you (in ca
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your answers beforehand.
 
 1. Hashing functions
+   Hashing function is a function that can map data to values. converts data to indices to create a key, and store data.
 2. Collision resolution
+   collision resolution is when a index is already used in the hash table, so instead of overwriting the data, you can create a Linked List to store numerous data.
 3. Performance of basic hash table operations
+   The basic performance a hash table is constant time O(1)
 4. Load factor
+   Load factor is a way to calculate and determine how ofter collision may occur in the hash table
 5. Automatic resizing
+   Automatic resizing is when the size of the hash table is increase/decrease based on load factor
 6. Various use cases for hash tables
+   A couple of use cases are for when you want to insert some data fast or lookup some data fast
 
 We expect you to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -55,7 +61,7 @@ For each problem that you choose to solve, complete the following:
 - [ ] Implement your solution in the `.py` skeleton file
 - [ ] Make sure your code passes the tests running the test script with make tests
 
-*Note: For these exercises, we expect you to use Python's built-in `dict` as a hashtable. That said, if you wish, you can attempt to solve using your own hashtable implementation, as well. All solutions should utilize a `dict` or hashtable. You should not use Sets. (Though you can make a `dict` behave like a set if you wish.)*
+_Note: For these exercises, we expect you to use Python's built-in `dict` as a hashtable. That said, if you wish, you can attempt to solve using your own hashtable implementation, as well. All solutions should utilize a `dict` or hashtable. You should not use Sets. (Though you can make a `dict` behave like a set if you wish.)_
 
 ### Task 3: Stretch Goals
 
@@ -68,7 +74,6 @@ After finishing your required elements, you can push your work further. These go
 
 Follow these steps to complete your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
 - [ ] Add your team lead as a reviewer on the pull-request
 - [ ] Your team lead will count the project as complete after receiving your pull-request
-
